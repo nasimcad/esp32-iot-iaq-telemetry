@@ -99,3 +99,7 @@ The device will automatically:
 ## 📊 Example Dashboard
 <img width="1605" height="862" alt="image" src="https://github.com/user-attachments/assets/dc154982-85ce-455f-b329-c9d35509ea60" />
 
+## 📈 Time Series
+<img width="1917" height="876" alt="image" src="https://github.com/user-attachments/assets/767175a2-659c-4ce1-92bc-827118314e61" />
+
+
