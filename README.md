@@ -1,4 +1,10 @@
 ## 🌡️ ESP32 IoT Indoor Comfort, Occupancy & Air Quality Telemetry
+![ESP32](https://img.shields.io/badge/ESP32-IoT-blue)
+![MicroPython](https://img.shields.io/badge/MicroPython-Embedded-yellow)
+![MQTT](https://img.shields.io/badge/MQTT-Protocol-green)
+![ThingsBoard](https://img.shields.io/badge/ThingsBoard-Cloud-orange)
+![Wokwi](https://img.shields.io/badge/Wokwi-Simulation-purple)
+
 
 A MicroPython-based IoT prototype for monitoring indoor environmental conditions, occupancy, and air quality using an ESP32 microcontroller.
 
@@ -89,3 +95,7 @@ The device will automatically:
 ✔ MQTT-based communication
 ✔ Sensor fault tolerance
 ✔ Automatic reconnection handling
+
+## 📊 Example Dashboard
+<img width="1605" height="862" alt="image" src="https://github.com/user-attachments/assets/dc154982-85ce-455f-b329-c9d35509ea60" />
+
