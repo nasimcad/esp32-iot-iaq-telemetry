@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "author": "Uri Shaked",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": -9.6, "left": -100.76, "attrs": {} },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": -172.5,
+      "left": 186.6,
+      "attrs": { "temperature": "28.2", "humidity": "60" }
+    },
+    {
+      "type": "wokwi-pir-motion-sensor",
+      "id": "pir1",
+      "top": -120.8,
+      "left": -324.18,
+      "attrs": {}
+    },
+    { "type": "wokwi-gas-sensor", "id": "gas1", "top": -218.1, "left": -108.2, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "dht1:VCC", "esp:3V3", "red", [ "v9.6", "h-297.75" ] ],
+    [ "dht1:SDA", "esp:15", "green", [ "v0" ] ],
+    [ "dht1:GND", "esp:GND.1", "black", [ "v99.7", "v101.9" ] ],
+    [ "pir1:VCC", "esp:5V", "red", [ "v0" ] ],
+    [ "pir1:GND", "esp:GND.2", "black", [ "v9.6", "h268.54" ] ],
+    [ "pir1:OUT", "esp:14", "green", [ "v0" ] ],
+    [ "gas1:GND", "esp:GND.3", "black", [ "h48", "v162.4" ] ],
+    [ "esp:34", "gas1:AOUT", "green", [ "v-86.4", "h153.75", "v-172.8" ] ],
+    [ "gas1:VCC", "esp:3V3", "red", [ "v27.9", "h-124.95" ] ]
+  ],
+  "dependencies": {}
+}
